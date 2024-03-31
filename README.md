@@ -21,3 +21,10 @@ Project Structure
 
 -Entity
   -Users
+
+--------------------------------------------------------------------------------------------------------------------
+2024/03/31
+- UserServiceImpl takes parameter of Map object
+- it is used for validation then coverted to dto using Modelmapper for taking the values in Map object as the values for UserDto object
+- then the dto object is changed to user entity object and the values from dto is passed to user object then the fields which we will not make available in dto also will be added to the user object
+- then we will return user object and save it to database using userRepo.
